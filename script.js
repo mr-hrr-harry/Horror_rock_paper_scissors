@@ -15,6 +15,7 @@ function init(){
     document.getElementById('startBtn').setAttribute('style', 'display: none')
     document.getElementById('refBtn').removeAttribute('hidden')
     document.getElementById('statusBar').removeAttribute('style')
+    document.getElementById('inputBar').removeAttribute('style')
 
     console.log("Points Table:\nRound    UserInput    CompInput    User    Comp")
 }
@@ -31,6 +32,9 @@ let ar=['Rock', 'Papr', 'Scis']
 
 let scoreU = document.getElementById("scoreA")
 let scoreC = document.getElementById("scoreB")
+
+let pIp = document.getElementById("pIp")
+let cIp = document.getElementById("cIp")
 
 let lead = document.getElementById("lead")
 let turn = document.getElementById("turn")
@@ -51,17 +55,14 @@ const rps = (event)=>{
         crrtClick.play()
         if(btnName.innerHTML=="✊🏻"){
             document.getElementById("playerDiv").innerHTML="✊🏻"
-            //document.getElementById("playerSymbol").innerText="ROCK"
             user=0
         }
         else if(btnName.innerHTML=="🖐🏻"){
             document.getElementById("playerDiv").innerHTML="🖐🏻"
-            //document.getElementById("playerSymbol").innerText="PAPER"
             user=1
         }
         else{
             document.getElementById("playerDiv").innerHTML="✌🏻"
-            //document.getElementById("playerSymbol").innerText="SCISSORS"
             user=2
         }
 
@@ -79,39 +80,58 @@ const rps = (event)=>{
 
         st='x'
         if(user==0){
+            pIp.innerText="Rock"
             if(comp==1){
                 st='c'
                 cCt++
                 scoreC.innerText=cCt
+                cIp.innerText="Paper"
             }
             else if(comp==2){
                 st='u'
                 uCt++
                 scoreU.innerText=uCt
+                cIp.innerText="Scissor"
+            }
+            else{
+                cIp.innerText="Rock"
             }
         }
         else if(user==1){
+            pIp.innerText="Paper"
             if(comp==0){
                 st='u'
                 uCt++
                 scoreU.innerText=uCt
+                cIp.innerText="Rock"
             }
             else if(comp==2){
                 st='c'
                 cCt++
                 scoreC.innerText=cCt
+                cIp.innerText="Scissor"
+            }
+            else{
+                cIp.innerText="Paper"
             }
         }
         else{
+            pIp.innerText="Scissor"
             if(comp==0){
                 st='c'
                 cCt++
                 scoreC.innerText=cCt
+                cIp.innerText="Rock"
             }
             else if(comp==1){
                 st='u'
                 uCt++
                 scoreU.innerText=uCt
+                cIp.innerText="Paper"
+            }
+            else{
+                cIp.innerText="Paper"
+
             }
         }
 
