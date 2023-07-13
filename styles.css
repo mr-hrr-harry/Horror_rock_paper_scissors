@@ -22,6 +22,123 @@ header{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(255, 255, 255);
 }
+footer{
+    text-align: center;
+    height: 200px;
+    width: auto;
+    margin: 20px;
+    background-color: #ffffff26;
+    border-radius: 30px;
+
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+footer > p{
+    margin-top: 40px;
+}
+
+#refBtn{
+    height: 45px;
+    width: 45px;
+    padding-top: 5px;
+    border-radius: 50%;
+    position: relative;
+    left: 95%;
+
+    border: 5px solid #000;
+
+    font-size: 25px;
+    font: bolder;
+
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+#refBtn:hover{
+
+    border: 2px solid #fff;
+    background-image: linear-gradient(45deg, #0890f8, #2f2857);
+    color: #fff;
+    box-shadow: 0px 0px 10px 1px #000;
+
+    font-size: 27px;
+
+    rotate: -90deg;
+}
+
+#scoreBoard{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;margin-bottom: 50px;
+
+    height: 70px;
+    width: auto;
+}
+
+#scoreA, #scoreB, #score{
+    font-size: 70px;
+    margin: 0px;
+    font-weight: bolder;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#score{
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 30px;
+    color: #000;
+    background-color: #fff;
+}
+
+#socialMedia a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+
+    margin: 10px 30px 10px 30px;
+    padding: 5px;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 50px;
+
+    text-decoration: none;
+    font-size: 32px;
+}
+#socialMedia a:hover{
+    color: #fff;
+    background-color: #fff;
+    color: rgb(20, 5, 118);
+    border: 3px solid  rgb(20, 5, 118);
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 5px #000;
+    
+    cursor: pointer;
+}
+
+#startBtn{
+
+    position: relative;
+    top: 10%;
+    left: 45%;
+
+    height: 50px;
+    width: 125px;
+
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px;
+}
+#startBtn:hover{
+    height: 52px;
+    width: 127px;
+
+    font-size: 26px;
+    box-shadow: 3px 3px 15px 1px;
+}
 
 #mainDiv{
     height: 400px;
@@ -79,3 +196,6 @@ header{
     font-size: 50px;
     cursor: pointer;
 }
+
+
+
