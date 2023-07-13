@@ -70,7 +70,8 @@ footer > p{
 #scoreBoard{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;margin-bottom: 50px;
+    align-items: center;
+    margin-bottom: 50px;
 
     height: 70px;
     width: auto;
@@ -89,6 +90,20 @@ footer > p{
     font-size: 30px;
     color: #000;
     background-color: #fff;
+}
+
+#statusBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-bottom: 50px; */
+}
+
+#lead, #turn, #curr{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #socialMedia a{
@@ -140,17 +155,17 @@ footer > p{
     box-shadow: 3px 3px 15px 1px;
 }
 
-#mainDiv{
+#mainDiv{  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
     height: 400px;
     width: auto;
     margin: 20px;
 
     background-color: #ffffff26;
     border-radius: 30px;
-
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 .compDiv{
     
@@ -164,6 +179,10 @@ footer > p{
     background-color: #ffffffef;
     box-shadow: 3px 3px 10px 10px #00000036;
     border-radius: 30px;
+}
+#gifImg{
+    position: absolute;
+    left: 35%;
 }
 
 #optGrp{
@@ -191,7 +210,7 @@ footer > p{
     border: 3px solid #000;
     background-color: #000000;
     border-radius: 50px;
-    box-shadow: 3px 3px 3px 3px #ffffff6c, -3px -3px 3px 3px #ffffff6c;
+    box-shadow: 0px 0px 10px 3px #ffffff6c;
 
     font-size: 50px;
     cursor: pointer;

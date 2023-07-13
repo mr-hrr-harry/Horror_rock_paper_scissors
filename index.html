@@ -25,18 +25,26 @@
         <h2 id="scoreB">0</h2>
     </div>
 
+    <div id="statusBar" style="display: none;">
+        <p id="lead">Lead: -</p>
+        <p id="turn">Round: 1/9 </p>
+        <p id="curr">Status: -</p>
+    </div>  
+
     <div id="mainDiv" style="display: none;">
         <div id="playerDiv" class="compDiv">
-            ✊🏻
+            
         </div>
         <div id="computerDiv" class="compDiv">
-            ✌🏻
+            
         </div>
     </div>
+
+    
     <div id="optGrp" style="display: none;">
-        <button class="optBtn" id="rockBtn" onclick="rps()">✊🏻</button>
-        <button class="optBtn" id="paperBtn" onclick="rps()">🖐🏻</button>
-        <button class="optBtn" id="scissorsBtn" onclick="rps()">✌🏻</button>
+        <button class="optBtn" id="rockBtn" onclick="rps(event)">✊🏻</button>
+        <button class="optBtn" id="paperBtn" onclick="rps(event)">🖐🏻</button>
+        <button class="optBtn" id="scissorsBtn" onclick="rps(event)">✌🏻</button>
     </div>
 
     <footer id="footer">
